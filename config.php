@@ -52,3 +52,4 @@ function connect_db() {
         die("Connection failed: " . $e->getMessage());
     }
 }
+
