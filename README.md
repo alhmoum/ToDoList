@@ -1,4 +1,16 @@
-# Titre du projet2
+# Projet ToDo List - MVC
+
+<p align="center">
+  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--C_I7VaEA--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://miro.medium.com/max/1024/1%2Av6O4SuMNwGUvl5L58dmv1Q.jpeg" width="450" title="hover text">
+</p>
+
+<h1 align="center">Modèle MVC</h1>
+
+```md
+L'architecture Modèle/Vue/Contrôleur (MVC) est une façon d'organiser une interface graphique d'un programme.
+Elle consiste à distinguer trois entités distinctes qui sont:
+le modèle, la vue et le contrôleur ayant chacun un rôle précis dans l'interface.
+```
 _(juste en dessous des badges sympatiques à placer)_
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)  [![forthebadge](http://forthebadge.com/images/badges/powered-by-electricity.svg)](http://forthebadge.com)
