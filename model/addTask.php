@@ -17,3 +17,19 @@ function addTask($id, $parameters)
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
+function updateTask($pdo, $data_array)
+{
+    try{
+    
+    $sql = "UPDATE tasks SET name = :name, description = :description, due_date = :due_date, id_task_giver = :id_task_giver, id_assigned_to = :id_assigned_to, id_status = :due_date WHERE id = :id;";
+   
+    $result = $pdo->prepare($sql);
+    
+    $result->execute($data_array);
+   
+    $result->closeCursor();
+    }
+    catch(Exception $e){
+        die ('Erreur : '.$e->getMEssage());
+    }
+}
