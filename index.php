@@ -43,8 +43,18 @@ require_once './model/addTask.php';
 ?>
     <?php
       if(!empty($_POST['envoyer'])) {
+           //$id = "1"; //$name = $_POST['name']
+    $title= "projet java"; //$name = $_POST['name']
+    $description = "application java "; //$name = $_POST['name']
+    $started_time = "2024-06-12 23:59:59.999"; //$name = $_POST['name']
+    $due_date = "2024-06-12 23:59:59.999"; //$name = $_POST['name']
+    $id_task_giver = "1"; //$name = $_POST['name']
+    $id_assigned_to = "4"; //$name = $_POST['name']
+    $id_status = "5"; //$name = $_POST['name']
+
           echo "Bonjour !";
           // ou echo afficher();
+           $parameters  = array();
           addTask($parameters);
       }
     ?>
