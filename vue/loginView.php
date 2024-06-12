@@ -15,15 +15,16 @@
     </header>
     <main>
     <h1>Connexion</h1>
-    <form method="post" action="login_process.php">
+    <form method="post" action="">
         <label for="username">Nom d'utilisateur</label>
         <input type="text" name="username" id="username" required>
         <br>
         <label for="password">Mot de passe</label>
         <input type="password" name="password" id="password" required>
         <br>
-        <button type="submit">Se connecter</button>
+        <button type="submit" name = "login_check">Se connecter</button>
     </form>
+    <a href="">Vers le formulaire d'inscription</a>
 
     </main>
     <footer>
