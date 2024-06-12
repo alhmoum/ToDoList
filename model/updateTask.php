@@ -9,7 +9,7 @@ function updateTask($data_array)
     /* Récupération de l'objet PDO de connexion à la base de données grâce à la fonction connect-db du ficher config.php */
     $pdo = connect_db();
     /* Préparation de la requête SQL */
-    $sql = "UPDATE tasks SET name = :name, description = :description, due_date = :due_date, id_task_giver = :id_task_giver, id_assigned_to = :id_assigned_to, id_status = :id_status WHERE id = :id;";
+    $sql = "UPDATE tasks SET title = :title, description = :description, due_date = :due_date, id_task_giver = :id_task_giver, id_assigned_to = :id_assigned_to, id_status = :id_status WHERE id = :id;";
     /* Préparation de l'execution de la requête */
     $result = $pdo->prepare($sql);
     /* Execution de la requête  */
