@@ -22,8 +22,8 @@
                 <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" id="id" name="id">
             </div>
             <div class="mb-3">
-                <label for="name" class="block text-sm font-medium text-gray-700">Nom</label>
-                <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" id="name" name="name">
+                <label for="title" class="block text-sm font-medium text-gray-700">Nom</label>
+                <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" id="title" name="name">
             </div>
             <div class="mb-3">
                 <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
