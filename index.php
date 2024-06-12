@@ -37,8 +37,20 @@ require APP . 'libs/helper.php';
 //require APP . 'core/controller.php';
 //require APP . 'view/_templates/header.php';
 
+require_once './model/addTask.php';
+
   echo 'test';
 ?>
-    
+    <?php
+      if(!empty($_POST['envoyer'])) {
+          echo "Bonjour !";
+          // ou echo afficher();
+          addTask($parameters);
+      }
+    ?>
+ 
+<form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post">
+    <input type="submit" id="envoyer" name="envoyer" value="envoyer">
+<form>
 </body>
 </html>
