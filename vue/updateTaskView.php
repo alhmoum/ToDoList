@@ -15,33 +15,37 @@
 
     </header>
     <main>
-        <form method="POST", action = "update_task">
+        <form method="POST" action = "" >
+            <div class="mb-3">
+                <label for="id" class="form-label">id</label>
+                <input type="text" class="form-control" id="id" name = "id">
+            </div>
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" name = "name">
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <input type="tex" class="form-control" id="description">
+                <input type="text" class="form-control" id="description" name = "description">
             </div>
             <div class="mb-3">
                 <label for="due_date" class="form-label">Due date </label>
-                <input type="date" class="form-control" id="due_date">
+                <input type="date" class="form-control" id="due_date" name = "due_date">
             </div>
             <div class="mb-3">
                 <label for="id_task_giver" class="form-label">Task Giver</label>
-                <input type="text" class="form-control" id="id_task_giver">
+                <input type="text" class="form-control" id="id_task_giver" name = "id_task_giver">
             </div>
             <div class="mb-3">
-                <label for="id_assigned_to" class="form-label"></label>
-                <input type="password" class="form-control" id="id_assigned_to">
+                <label for="id_assigned_to" class="form-label">Assigned to</label>
+                <input type="text" class="form-control" id="id_assigned_to" name="id_assigned_to">
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="id_status" class="form-label">Stauts</label>
+                <input type="text" class="form-control" id="id_status" name="id_status">
             </div>
             
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" name = "update_task">Submit</button>
         </form>
 
     </main>
