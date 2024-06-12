@@ -5,13 +5,12 @@ require_once ('../model/updateTask.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["update_task"])) {
     echo 'J\'essaie d\'update';
-    $data_array['id'] = $_POST['id'];
-    $data_array['name'] = $_POST['name'];
-    $data_array['description'] = $_POST['description'];
-    $data_array['due_date'] = $_POST['due_date'];
-    $data_array['id_task_giver'] = $_POST['id_task_giver'];
-    $data_array['id_assigned_to'] = $_POST['id_assigned_to'];
-    $data_array['id_status'] = $_POST['id_status'];
-    
+    $data_array['id'] = htmlspecialchars($_POST['id'], ENT_QUOTES, 'UTF-8');
+    $data_array['name'] = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
+    $data_array['description'] = htmlspecialchars($_POST['description'], ENT_QUOTES, 'UTF-8');
+    $data_array['due_date'] = htmlspecialchars($_POST['due_date'], ENT_QUOTES, 'UTF-8');
+    $data_array['id_task_giver'] = htmlspecialchars($_POST['id_task_giver'], ENT_QUOTES, 'UTF-8');
+    $data_array['id_assigned_to'] = htmlspecialchars($_POST['id_assigned_to'], ENT_QUOTES, 'UTF-8');
+    $data_array['id_status'] = htmlspecialchars($_POST['id_status'], ENT_QUOTES, 'UTF-8');
     updateTask($data_array);
 }
