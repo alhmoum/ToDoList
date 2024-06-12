@@ -1,7 +1,9 @@
 <?php
 require_once './config.php';
 
-function deleteTask($id, $pdo) {
+function deleteTask($id) {
+    //
+    $pdo = connect_db();
     // Début du bloc try pour gérer les exceptions potentielles
     try {
         // Requête SQL pour supprimer une tâche en utilisant un paramètre nommé :id
