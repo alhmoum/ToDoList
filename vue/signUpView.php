@@ -16,17 +16,19 @@
     </header>
     <main>
         <h1>Inscription</h1>
-        <form method="post" action="register_process.php">
+        <form method="post" action="">
             <label for="username">Nom d'utilisateur</label>
             <input type="text" name="username" id="username" required>
             <br>
             <label for="password">Mot de passe</label>
             <input type="password" name="password" id="password" required>
             <br>
+            <label for="password">Confirmez le mot de passe</label>
+            <input type="password" name="password_confirmation" id="password" required>
             <button type="submit" name = "signup">S'inscrire</button>
         </form>
 
-        <a href="">Vers le formulaire de connexion</a>
+        <a href="../controller/loginController.php">Vers le formulaire de connexion</a>
 
     </main>
     <footer>
